@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>finalTutorial</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CMSC320 Data Science Tutorial</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14730,7 +14730,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <p>There are two main sources of data and one supplementary source of data that we will need.</p>
 <p>The first main source is <a href="https://data.cdc.gov/Case-Surveillance/Weekly-United-States-COVID-19-Cases-and-Deaths-by-/pwn4-m3yp">a collection of COVID-19 case and death data from the CDC</a>. This will supply us with all of the information we need about cases and deaths. More specifically, it contains aggregated totals for all cases and deaths, on which day the totals were added, and from which U.S. state the totals came from. We will convert this csv file into a pandas DataFrame named <code>df_cd</code>.</p>
 <p>The second main source is <a href="https://usafacts.org/visualizations/covid-vaccine-tracker-states">a collection of COVID-19 vaccine data from USAFACTS</a>. This contains everything we need to know about COVID-19 vaccine data over the last few years. This includes the number of partially vaccinated people, the number of fully vaccinated people, the date that each data entry was aggregated, the U.S. state that the data entry originates from, and population data for that respective state. We will convert this csv file into a pandas DataFrame named <code>df_v</code>.</p>
-<p>The supplementary source of data is <a href="https://github.com/jasonong/List-of-US-States/blob/master/states.csv">a list of U.S. states (and the District of Columbia) and their respective abbreviations</a>. This data will come in handy during the data cleaning process, as the U.S. state information between the two main tables does not match, and coverting everything into the abbreviations will make handling the data a significantly more streamlined process. We will convert this csv file into a pandas DataFrame named <code>df_states</code>.</p>
+<p>The supplementary source of data is <a href="https://github.com/jasonong/List-of-US-States/blob/master/states.csv">a list of U.S. states (and the District of Columbia) and their respective abbreviations</a>. This data will come in handy during the data cleaning process, as the U.S. state information between the two main tables does not match, and converting everything into the abbreviations will make handling the data a significantly more streamlined process. We will convert this csv file into a pandas DataFrame named <code>df_states</code>.</p>
 
 </div>
 </div>
@@ -15961,7 +15961,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The model itself is a Linear Regression model from the skikit learn library (<code>sklearn</code>). Scikit learn has many different machine learning models to experiment, and you can learn more about them and more about how the model works under the hood by reading their <a href="https://scikit-learn.org/stable/modules/classes.html">documentation</a>.</p>
+<p>The model itself is a Linear Regression model from the scikit learn library (<code>sklearn</code>). Scikit learn has many different machine learning models to experiment, and you can learn more about them and more about how the model works under the hood by reading their <a href="https://scikit-learn.org/stable/modules/classes.html">documentation</a>.</p>
 <p>The Linear Regression for this example uses Ordinary least squares, which means that the residual sum of squares is used to calculate the loss, and is the value for which the regression model works to minimize.</p>
 <p>To fit the model, we randomly split the data. 75% of the data is used to train the model, and 25% is used to test the model.</p>
 <p>Scoring of the data is described in the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression.score">scikit learn documentation</a>:</p>
@@ -16298,7 +16298,7 @@ class="
 <p>Our model was very poor. Does this mean all of our work was for nothing? Does getting vaccinated not do anything to prevent COVID-19?</p>
 <p>Our work was NOT a waste. Despite our model's results we DO NOT have the information to conclude the second question. The only thing we can conclude is that our model was not a good fit for our data, and there is NOT a strong correlation between the two specific variables that we tested. The fact of the matter is: COVID-19 is an extremely complicated phenomena that cannot be boiled down to these two variables. There are a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7584177/">significant number of factors</a> that have an influence on whether or not a person gets infected with COVID-19.</p>
 <p>However, this is not a dead end! All we did is rule out something that does not work well. Perhaps there is a non-linear machine learning model that fits this data quite nicely and reveals astonishing trends! Data science is a constantly-evolving dynamic process, not a strict assembly line. We can always go back and forth and try new strategies, new data, new models, etc.</p>
-<p>Our model may not be able to give us many definitive answers, but it does give us an insight into the nature of the numbers surrounding COVID-19 and the kind of effort it takes to analyze the true impact that COVID-19 has had on our lives. Now that you have followed the entire tutorial, you have traversed through the entire data science pipeline! Congratulations! I hope you learned everything you wanted to learn and I hope that this piqued your interest into the world of data science.</p>
+<p>Our model may not be able to give us many definitive answers, but it does give us an insight into the nature of the numbers surrounding COVID-19 and the kind of effort it takes to analyze the true impact that COVID-19 has had on our lives. Now that you have followed the entire tutorial, you have traversed through the entire data science pipeline! Congratulations! I hope you learned everything you wanted to learn and I hope that this piqued your interest in the world of data science.</p>
 
 </div>
 </div>
