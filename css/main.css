@@ -935,6 +935,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #888888;
 }
 
+.devicon-grid {
+	/* width: 100% */
+}
+
+.devicon-grid i {
+	font-size: 10rem;
+}
+.devicon-grid img {
+	width: 10rem;
+	height: 10rem;
+	padding: 1.5rem;
+}
+
 /**
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
@@ -1096,7 +1109,7 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 150px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
@@ -1105,22 +1118,24 @@ header .top-bar {
 header .logo {
 	float: left;
 	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
+	margin-right: 20px;
+	margin-top: 20px;
 	position: relative;
 }
 header .logo a {
 	display: block;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
 	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: "poppins-medium", sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+header .logo a:hover {
+	color: #FF0077;
 }
 
 /**
@@ -1136,6 +1151,17 @@ header .logo a {
 	display: block;
 	position: relative;
 }
+
+.menu-toggle-text {
+	float: left;
+	width: 80px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 13px;
+	display: block;
+	position: relative;
+}
+
 .menu-toggle span {
 	display: block;
 	background-color: #FF0077;
@@ -1386,7 +1412,7 @@ header .logo a {
 .intro-content .button:hover, .intro-content .button:focus {
 	border-color: #cc005f;
 }
-.intro-content .button::after {
+.intro-content .arrowed::after {
 	display: inline-block;
 	content: "\f107";
 	font-family: fontAwesome;
@@ -1395,6 +1421,15 @@ header .logo a {
 	text-align: center;
 	position: relative;
 	left: 1.2rem;
+}
+#get-resume {
+	height: 6rem !important;
+	line-height: 5.4rem !important;
+	padding: 0 2.5rem 0 2rem !important;
+	margin-top: 1.6rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
 }
 
 .intro-social {
@@ -1550,6 +1585,16 @@ header .logo a {
 	font-size: 1.5rem;
 	line-height: 1;
 }
+
+.about-content .info-list li span a {
+	color: #888888;
+	text-decoration: underline !important;
+}
+
+.about-content .info-list li span a:hover {
+	color: #FF0077;
+}
+
 .about-content .skill-bars {
 	margin-top: 6rem;
 }
