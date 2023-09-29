@@ -1128,7 +1128,7 @@ header .logo a {
 	padding: 0;
 	border: none;
 	text-shadow: none;
-	color: hsla(0, 0%, 100%, 0.75);
+	color: hsla(0, 0%, 100%, 0.8);
 	font-family: "poppins-medium", sans-serif;
 	font-size: 24px;
 	font-weight: normal;
@@ -1320,7 +1320,7 @@ header .logo a:hover {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/Beachsun.png) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1450,7 +1450,13 @@ header .logo a:hover {
 .intro-social li a, .intro-social li a:visited {
 	color: #FFFFFF;
 }
+.intro-social li svg, .intro-social li svg:visited {
+	color: #FFFFFF;
+}
 .intro-social li a:hover, .intro-social li a:focus {
+	color: #cc005f;
+}
+.intro-social li svg:hover, .intro-social li svg:focus {
 	color: #cc005f;
 }
 
@@ -1593,6 +1599,14 @@ header .logo a:hover {
 
 .about-content .info-list li span a:hover {
 	color: #FF0077;
+}
+
+.about-content .profile-photo-shrink img {
+	width: 100%;
+	height: auto;
+	max-width: 35rem;
+	margin-bottom: 4rem;
+	border-radius: 2rem;
 }
 
 .about-content .skill-bars {
@@ -1853,6 +1867,19 @@ header .logo a:hover {
 	transition: all 0.5s ease-in-out;
 }
 
+#portfolio .folio-item img.smaller-modal-img {
+	width: 70%;
+	height: 70%;
+	margin: 15%;
+}
+
+#portfolio .folio-item.dark-back, .popup-modal img.dark-back {
+	background-color: rgb(10, 1, 30);	
+}
+#portfolio .folio-item.light-back, .popup-modal img.light-back {
+	background-color: rgb(226, 226, 226);	
+}
+
 #portfolio .overlay {
 	position: absolute;
 	top: 0;
@@ -1912,6 +1939,10 @@ header .logo a:hover {
 	transform: scale(1.05);
 }
 
+#folio-05 img, #folio-06 img {
+	width: 100%;
+}
+
 /**
  * responsive:
  * portfolio
@@ -1945,9 +1976,11 @@ header .logo a:hover {
 }
 .popup-modal .media {
 	position: relative;
+	object-fit: cover;
 }
 .popup-modal img {
 	vertical-align: bottom;
+	width: 100%;
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
@@ -1997,6 +2030,10 @@ header .logo a:hover {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+.popup-modal .link-box a.full-width-link {
+	width: 100%;
+}
+
 .popup-modal .link-box a:first-child {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
@@ -2398,7 +2435,7 @@ header .logo a:hover {
 	border-color: #FF0077;
 	color: #FFFFFF;
 }
-#contact button.submitform {
+#contact button.submitform, input.submitform {
 	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .2rem;
@@ -2411,6 +2448,9 @@ header .logo a:hover {
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
+	background: #cc005f;
+}
+input.submitform:hover, input.submitform:focus {
 	background: #cc005f;
 }
 #message-warning, #message-success {
