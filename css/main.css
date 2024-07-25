@@ -1320,7 +1320,7 @@ header .logo a:hover {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/Beachsun.png) no-repeat center bottom;
+	background: #151515 url(../images/Beachsun.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2566,6 +2566,12 @@ input.submitform:hover, input.submitform:focus {
 		-ms-transform: scale(1);
 		transform: scale(1);
 	}
+}
+
+.thankyou_message h1 {
+	padding-top: .8rem;
+	font-size: 2rem;
+	color: #6e6e6e;
 }
 
 
